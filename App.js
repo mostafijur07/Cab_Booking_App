@@ -5,6 +5,7 @@ import MapScreen from "./screens/MapScreen";
 import Summary from "./screens/Summary";
 import Selection from "./screens/Selection";
 import Select from "./screens/Select";
+// import Calculation from "./screens/Calculation";
 import { NavigationContainer } from "@react-navigation/native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';

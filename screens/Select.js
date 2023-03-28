@@ -20,7 +20,7 @@ const Select = ({ route }) => {
         duration,
         weatherCondition,
       };
-      const res = await axios.post("http://10.10.60.8:5000/predict", inputData);
+      const res = await axios.post("http://10.10.62.155:5000/predict", inputData);
       setSurgeMultiplier(res.data.surgeMultiplier);
     }
    
@@ -28,15 +28,16 @@ const Select = ({ route }) => {
   }, [route]);
 
   useEffect(() => {
-    if (surgeMultiplier !== null) {
-    let baseFare = 25;
-    let distanceFare = (distance * 7).toFixed(2);
-    let durationFare = (duration * 1.2).toFixed(2);
-    let surgeFare = (baseFare + distanceFare + durationFare) * surgeMultiplier;
-    let price = Math.round(surgeFare);
-    setPrice(price);
+    if (surgeMultiplier !== null && distance !== null && duration !== null) {
+      let baseFare = 25;
+      let distanceFare = (parseFloat(distance) * 7).toFixed(2);
+      let durationFare = (parseFloat(duration) * 1.2).toFixed(2);
+      let surgeFare = (baseFare + parseFloat(distanceFare) + parseFloat(durationFare)) * surgeMultiplier;
+      let calculatedPrice = Math.round(surgeFare);
+      setPrice(calculatedPrice);
     }
-    }, [surgeMultiplier]);
+  }, [surgeMultiplier, distance, duration]);
+  
 
   return (
     <View>
@@ -55,4 +56,5 @@ const Select = ({ route }) => {
 export default Select;
 
 const styles = StyleSheet.create({});
+
 

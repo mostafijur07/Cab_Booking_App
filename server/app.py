@@ -37,6 +37,6 @@ def predict():
 
 # main driver function
 if __name__ == '__main__':
-    app.run(host = '10.10.60.8', port=5000, debug=True)
+    app.run(host = '10.10.62.155', port=5000, debug=True)
 
 
