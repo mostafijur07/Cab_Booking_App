@@ -1,14 +1,18 @@
 import React from "react";
-import { StyleSheet, Text, View, SafeAreaView} from "react-native";
+import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 import HomeScreen from "./screens/HomeScreen";
 import MapScreen from "./screens/MapScreen";
 import Summary from "./screens/Summary";
 import Selection from "./screens/Selection";
 import Select from "./screens/Select";
-// import Calculation from "./screens/Calculation";
+import LoginScreen from "./screens/LoginScreen";
+import RegScreen from "./screens/RegScreen";
+import BookDetailsScreen from "./screens/BookDetailsScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+// import { auth } from "./firebaseConfig";
+
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -16,6 +20,27 @@ export default function App() {
     <NavigationContainer>
       <SafeAreaProvider>
         <Stack.Navigator>
+          <Stack.Screen
+            name="LoginScreen"
+            component={LoginScreen}
+            options={{
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="RegScreen"
+            component={RegScreen}
+            options={{
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="BookDetailsScreen"
+            component={BookDetailsScreen}
+            options={{
+              headerShown: false,
+            }}
+          />
           <Stack.Screen
             name="HomeScreen"
             component={HomeScreen}
@@ -65,3 +90,4 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
+

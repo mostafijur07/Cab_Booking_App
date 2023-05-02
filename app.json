@@ -25,6 +25,15 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "@rnmapbox/maps",
+        {
+          "RNMapboxMapsImpl": "mapbox",
+          "RNMapboxMapsDownloadToken": "sk.eyJ1IjoibW9zdGFmaWp1cjA3IiwiYSI6ImNsZ28wdW8zZTBoMHAzZHFrenk5MnRrN2EifQ.BQObeZhflAkNS0nU4I_9Yw"
+        }
+      ]
+    ]
   }
 }
