@@ -5,10 +5,10 @@ import {getFirestore} from "firebase/firestore";
 const firebaseConfig = {
     apiKey: "",
     authDomain: "cab-book-900e7.firebaseapp.com",
-    projectId: "cab-book-900e7",
+    projectId: "",
     storageBucket: "cab-book-900e7.appspot.com",
     messagingSenderId: "307488247882",
-    appId: "1:307488247882:web:6c66cf9af2ffcd14c216b3"
+    appId: ""
 };
 
 const app = initializeApp(firebaseConfig);
