@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBwqHUGyJDt4rsMcXi0U7eueGFkI6ysqS4",
+    apiKey: "",
     authDomain: "cab-book-900e7.firebaseapp.com",
     projectId: "cab-book-900e7",
     storageBucket: "cab-book-900e7.appspot.com",
