@@ -6,15 +6,6 @@ This project is a cab booking application developed using React Native and Expo.
 
 
 Command Required to start the project
-npm create-react-app
-npm install create-react-app
-npx create-react-app cab_book_app
-npm start
-expo start
-npm install -g npm@10.5.0
+npm install -g expo-cli
 npm install
-npm expo start
-npm install expo@latest
-npm install expo@49  
-npx expo install --fix 
-npx expo start
+expo start
