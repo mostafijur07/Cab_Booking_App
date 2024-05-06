@@ -9,3 +9,5 @@ Command Required to start the project
 1. npm install -g expo-cli
 2. npm install
 3. expo start
+
+![cab_book_img_1](https://github.com/mostafijur07/Cab_Booking_App/assets/89746261/6bb23738-0de4-448b-90ca-e894a9598c39)
