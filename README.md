@@ -6,6 +6,7 @@ This project is a cab booking application developed using React Native and Expo.
 
 
 Command Required to start the project
+1. sudo apt install npm
 1. npm install -g expo-cli
 2. npm install
 3. expo start
