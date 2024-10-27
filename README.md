@@ -11,8 +11,6 @@ To Create A Blank React-Native Project
 4. Select Blank
 5. npm start
 
-![cab_book_img_1](https://github.com/mostafijur07/Cab_Booking_App/assets/89746261/6bb23738-0de4-448b-90ca-e894a9598c39)
-
 # 🚖 Cab Booking Application
 
 An interactive mobile application for booking cabs, developed using **React Native** and **Expo**. This app integrates **Google Maps** for accurate location tracking and employs a **machine learning-based surge price prediction** system to dynamically calculate cab fares based on demand and weather conditions. 
@@ -40,7 +38,6 @@ An interactive mobile application for booking cabs, developed using **React Nati
 ## 🖥️ Screenshots
 
 Here are a few snapshots of the app's main screens:
-
 | Home Screen | Map View | Surge Price Prediction |
 | ----------- | -------- | ---------------------- |
 | ![Home]([https://link_to_image1](https://github.com/mostafijur07/Cab_Booking_App/assets/89746261/6bb23738-0de4-448b-90ca-e894a9598c39)) | ![Map View](https://link_to_image2) | ![Surge Prediction](https://link_to_image3) |
