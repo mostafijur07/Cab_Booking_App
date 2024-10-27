@@ -43,7 +43,7 @@ Here are a few snapshots of the app's main screens:
 
 | Home Screen | Map View | Surge Price Prediction |
 | ----------- | -------- | ---------------------- |
-| ![Home](https://link_to_image1) | ![Map View](https://link_to_image2) | ![Surge Prediction](https://link_to_image3) |
+| ![Home]([https://link_to_image1](https://github.com/mostafijur07/Cab_Booking_App/assets/89746261/6bb23738-0de4-448b-90ca-e894a9598c39)) | ![Map View](https://link_to_image2) | ![Surge Prediction](https://link_to_image3) |
 
 ---
 
