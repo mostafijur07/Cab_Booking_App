@@ -12,3 +12,52 @@ To Create A Blank React-Native Project
 5. npm start
 
 ![cab_book_img_1](https://github.com/mostafijur07/Cab_Booking_App/assets/89746261/6bb23738-0de4-448b-90ca-e894a9598c39)
+
+# 🚖 Cab Booking Application
+
+An interactive mobile application for booking cabs, developed using **React Native** and **Expo**. This app integrates **Google Maps** for accurate location tracking and employs a **machine learning-based surge price prediction** system to dynamically calculate cab fares based on demand and weather conditions. 
+
+---
+
+## 📱 Features
+
+- **Book Cabs**: User-friendly interface for seamless cab booking.
+- **Real-time Location Tracking**: Google Maps integration for precise location tracking and navigation.
+- **Dynamic Fare Calculation**: Machine learning-based surge price prediction for accurate, real-time fare adjustments.
+- **Weather Updates**: Fetches real-time weather information using API calls to help predict surge prices based on weather conditions.
+
+---
+
+## 🔧 Technologies Used
+
+- **React Native** & **Expo**: For cross-platform mobile application development.
+- **Google Maps API**: For real-time location services.
+- **Machine Learning Model**: For surge price prediction based on multiple parameters.
+- **Weather API**: For retrieving weather data that contributes to the surge price calculation.
+
+---
+
+## 🖥️ Screenshots
+
+Here are a few snapshots of the app's main screens:
+
+| Home Screen | Map View | Surge Price Prediction |
+| ----------- | -------- | ---------------------- |
+| ![Home](https://link_to_image1) | ![Map View](https://link_to_image2) | ![Surge Prediction](https://link_to_image3) |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have these installed on your system:
+
+- [Node.js](https://nodejs.org/) (v14 or higher recommended)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
