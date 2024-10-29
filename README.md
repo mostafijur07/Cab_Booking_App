@@ -1,21 +1,8 @@
-# Cab_Booking_App
-
-Project Description:
-
-This project is a cab booking application developed using React Native and Expo. It incorporates a machine learning-based surge price prediction system to accurately forecast prices within the application. The system utilizes the OpenWeatherMap API to fetch real-time weather data, ensuring a seamless user experience. Additionally, the application integrates the OpenRouteService API and Google Maps to provide efficient route planning and navigation for users. Firebase authentication and database functionalities are implemented to facilitate secure user login and registration. The app simplifies the cab booking process with a user-friendly interface, allowing users to book a cab in just five simple steps. With its robust features and reliable functionalities, this project offers a comprehensive solution for convenient and efficient cab booking.
-
-To Create A Blank React-Native Project
-1. sudo apt install nodejs npm
-2. sudo npm install -g expo-cli
-3. expo init <Folder Name>
-4. Select Blank
-5. npm start
-
 # 🚖 Cab Booking Application
 
-An interactive mobile application for booking cabs, developed using **React Native** and **Expo**. This app integrates **Google Maps** for accurate location tracking and employs a **machine learning-based surge price prediction** system to dynamically calculate cab fares based on demand and weather conditions. 
+Project Description:
+This project is a cab booking application developed using React Native and Expo. It incorporates a machine learning-based surge price prediction system to accurately forecast prices within the application. The system utilizes the OpenWeatherMap API to fetch real-time weather data, ensuring a seamless user experience. Additionally, the application integrates the OpenRouteService API and Google Maps to provide users with efficient route planning and navigation. Firebase authentication and database functionalities are implemented to facilitate secure user login and registration. The app simplifies the cab booking process with a user-friendly interface, allowing users to book a cab in just five simple steps. With its robust features and reliable functionalities, this project offers a comprehensive solution for convenient and efficient cab booking.
 
----
 
 ## 📱 Features
 
@@ -24,6 +11,32 @@ An interactive mobile application for booking cabs, developed using **React Nati
 - **Dynamic Fare Calculation**: Machine learning-based surge price prediction for accurate, real-time fare adjustments.
 - **Weather Updates**: Fetches real-time weather information using API calls to help predict surge prices based on weather conditions.
 
+## 🚀 Getting Started
+---
+To Create A Blank React-Native Project
+1. sudo apt install nodejs npm
+2. sudo npm install -g expo-cli
+3. expo init <Folder Name> # Name of the app. For Example: cab_book. The project folder will be created in the current directory.
+4. Select Blank
+5. npm start
+   
+---
+To set up a cloned React Native and Expo project, we need to install the necessary dependencies and development environment.
+1. Install Node.js and npm: Download and install Node.js, which includes npm (Node Package Manager), if it isn’t installed.
+2. Install Expo CLI: Run the following command in your terminal to install the Expo CLI globally.
+   npm install -g expo-cli
+3. Clone the Project From GitHub: Open a terminal in the directory where you want to place the project and run:
+   git clone <your-github-repo-url>
+4. Navigate to the Project Directory: Use the terminal to navigate into the cloned project folder:
+   cd your-project-folder
+5. Install Project Dependencies: Run the following command to install all the dependencies listed in the package.json file:
+   npm install
+   If you want to install dependencies one at a time: Run the following command:
+   npm install <dependencies name>
+   For Example: npm install axios
+6. Now run the project:
+   npm start.
+   
 ---
 
 ## 🔧 Technologies Used
@@ -44,17 +57,5 @@ Here are a few snapshots of the app's main screens:
 
 ---
 
-## 🚀 Getting Started
 
-### Prerequisites
 
-Make sure you have these installed on your system:
-
-- [Node.js](https://nodejs.org/) (v14 or higher recommended)
-- [Expo CLI](https://docs.expo.dev/get-started/installation/)
-
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
