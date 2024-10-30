@@ -1,16 +1,101 @@
-# 🚖 Cab Booking Application
+# 🚖 Cab Booking App
 
-Project Description:
-This project is a cab booking application developed using React Native and Expo. It incorporates a machine learning-based surge price prediction system to accurately forecast prices within the application. The system utilizes the OpenWeatherMap API to fetch real-time weather data, ensuring a seamless user experience. Additionally, the application integrates the OpenRouteService API and Google Maps to provide users with efficient route planning and navigation. Firebase authentication and database functionalities are implemented to facilitate secure user login and registration. The app simplifies the cab booking process with a user-friendly interface, allowing users to book a cab in just five simple steps. With its robust features and reliable functionalities, this project offers a comprehensive solution for convenient and efficient cab booking.
+## 📜 Project Description
+This project is a cab booking application developed using **React Native** and **Expo**. It incorporates a machine learning-based surge price prediction system to accurately forecast prices within the application. The system utilizes the **OpenWeatherMap API** for real-time weather data, enhancing the user experience. Additionally, the app integrates the **OpenRouteService API** and **React Native Maps** for efficient route planning and navigation. Secure user authentication and database functionality are provided by **Firebase**.
 
+The app simplifies cab booking with a user-friendly interface, allowing users to book a cab in five easy steps. This project offers a comprehensive convenient and efficient cab booking solution with robust features and reliable functionalities.
 
-## 📱 Features
+---
 
-- **Book Cabs**: User-friendly interface for seamless cab booking.
-- **Real-time Location Tracking**: Google Maps integration for precise location tracking and navigation.
-- **Dynamic Fare Calculation**: Machine learning-based surge price prediction for accurate, real-time fare adjustments.
-- **Weather Updates**: Fetches real-time weather information using API calls to help predict surge prices based on weather conditions.
+## 📑 Table of Contents
+- [Features](#-features)
+- [Technologies Used](#-technologies-used)
+- [Folder Structure](#-folder-structure)
+- [Getting Started](#-getting-started)
+- [Screenshots](#-screenshots)
+- [Surge Price Prediction Model](#-surge-price-prediction-model)
+- [License](#-license)
 
+---
+## ✨ Features
+- **User Authentication:** Secure login and registration with Firebase.
+- **Real-Time Price Prediction:** Surge price prediction using machine learning and weather data.
+- **Current Weather Data Fetch:** Using OpenWeatherMap api.
+- **Route Planning:** Efficient route planning and navigation with OpenRouteService API and React Native Maps.
+- **Seamless User Experience:** Book a cab in five steps with a clean and intuitive UI.
+- **Data Storage:** User and booking information stored securely in Firebase.
+
+---
+## 🗂️ Folder Structure
+
+### Screens Folder
+1. `LoginScreen.js` - Login screen with Firebase Auth.
+2. `RegScreen.js` - Registration screen to store user info in Firebase.
+3. `HomeScreen.js` - Home page.
+4. `MapScreen.js` - Displays map for route selection.
+5. `Selection.js` - Date and time selection.
+6. `Select.js` - Shows predicted fare and available cars for booking.
+7. `Summary.js` - Displays final booking details.
+8. `BookDetailsScreen.js` - Shows booking history.
+
+### Server Folder
+- Contains the Machine Learning model and dataset.
+
+### Configuration Files
+- `App.js` - Links all screens.
+- `FirebaseConfig.js` - Contains Firebase configuration.
+- `.env` - Stores API keys and sensitive information.
+
+---
+## 🖼 Screenshots
+
+Below are screenshots of the app's main screens:
+
+| Login Screen                                   | Registration Screen                          |
+|------------------------------------------------|----------------------------------------------|
+| ![Login Screen](https://github.com/mostafijur07/Cab_Booking_App/blob/master/Screenshots/Login.jpg)   | ![Registration Screen](https://github.com/mostafijur07/Cab_Booking_App/blob/master/Screenshots/Reg.jpg) |
+
+| Home Screen                                    | Map Screen                                   |
+|------------------------------------------------|----------------------------------------------|
+| ![Home Screen](https://github.com/mostafijur07/Cab_Booking_App/blob/master/Screenshots/HomePage.jpg) | ![Map Screen](https://github.com/mostafijur07/Cab_Booking_App/blob/master/Screenshots/Map.jpg) |
+
+| Selection Screen                               | Prediction Screen                            |
+|------------------------------------------------|----------------------------------------------|
+| ![Selection Screen](https://github.com/mostafijur07/Cab_Booking_App/blob/master/Screenshots/Selection.jpg) | ![Prediction Screen](https://github.com/mostafijur07/Cab_Booking_App/blob/master/Screenshots/Select.jpg) |
+
+| Summary Screen                                 | Booking Details Screen                       |
+|------------------------------------------------|----------------------------------------------|
+| ![Summary Screen](https://github.com/mostafijur07/Cab_Booking_App/blob/master/Screenshots/Summary.jpg) | ![Booking Details Screen](https://github.com/mostafijur07/Cab_Booking_App/blob/master/Screenshots/BookDetails.jpg) |
+
+---
+🔍 Surge Price Prediction Model
+This project includes a surge price prediction system built using a Random Forest Regressor in Python. The system predicts the surge multiplier for cab fares in Kolkata based on various factors such as date, time, location, distance, duration, and weather.
+
+Model Overview
+The model leverages a Random Forest Regressor algorithm, known for handling nonlinear data. The model was trained on a dataset of over 1,000 rows of historical data. By analyzing the dataset’s features, the model predicts the surge multiplier, allowing users to understand how external factors affect pricing.
+
+Key Components of the Model
+Features and Target:
+
+Features (X): date, time, pickupLatitude, pickupLongitude, dropoffLatitude, dropoffLongitude, distance, duration, weatherCondition
+Target (y): surgeMultiplier
+Data Preprocessing:
+
+One-Hot Encoding for categorical features.
+Train-Test Split (70% training, 30% testing).
+Model Training:
+
+Random Forest with 100 decision trees.
+Model Evaluation:
+
+Metrics:
+Mean Absolute Error (MAE): 0.1328
+Mean Squared Error (MSE): 0.0255
+Root Mean Squared Error (RMSE): 0.1598
+R² Score: 0.69
+These results indicate reasonable accuracy, explaining 69% of variance in surge pricing.
+
+---
 ## 🚀 Getting Started
 ---
 To Create A Blank React-Native Project
@@ -39,23 +124,6 @@ To set up a cloned React Native and Expo project, we need to install the necessa
    
 ---
 
-## 🔧 Technologies Used
-
-- **React Native** & **Expo**: For cross-platform mobile application development.
-- **Google Maps API**: For real-time location services.
-- **Machine Learning Model**: For surge price prediction based on multiple parameters.
-- **Weather API**: For retrieving weather data that contributes to the surge price calculation.
-
----
-
-## 🖥️ Screenshots
-
-Here are a few snapshots of the app's main screens:
-| Home Screen | Map View | Surge Price Prediction |
-| ----------- | -------- | ---------------------- |
-| ![cab_book_img_1](https://github.com/mostafijur07/Cab_Booking_App/assets/89746261/6bb23738-0de4-448b-90ca-e894a9598c39) | ![cab_book_img_1](https://github.com/mostafijur07/Cab_Booking_App/assets/89746261/6bb23738-0de4-448b-90ca-e894a9598c39)| ![cab_book_img_1](https://github.com/mostafijur07/Cab_Booking_App/assets/89746261/6bb23738-0de4-448b-90ca-e894a9598c39)|
-
----
 
 
 
