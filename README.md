@@ -68,31 +68,30 @@ Below are screenshots of the app's main screens:
 | ![Summary Screen](https://github.com/mostafijur07/Cab_Booking_App/blob/master/Screenshots/Summary.jpg) | ![Booking Details Screen](https://github.com/mostafijur07/Cab_Booking_App/blob/master/Screenshots/BookDetails.jpg) |
 
 ---
-🔍 Surge Price Prediction Model
-This project includes a surge price prediction system built using a Random Forest Regressor in Python. The system predicts the surge multiplier for cab fares in Kolkata based on various factors such as date, time, location, distance, duration, and weather.
+🔍## Surge Price Prediction Model
+- This project includes a surge price prediction system built using a Random Forest Regressor in Python. The system predicts the surge multiplier for cab fares in Kolkata based on various factors such as date, time, location, distance, duration, and weather.
 
-Model Overview
+- Model Overview
 The model leverages a Random Forest Regressor algorithm, known for handling nonlinear data. The model was trained on a dataset of over 1,000 rows of historical data. By analyzing the dataset’s features, the model predicts the surge multiplier, allowing users to understand how external factors affect pricing.
 
-Key Components of the Model
-Features and Target:
-
-Features (X): date, time, pickupLatitude, pickupLongitude, dropoffLatitude, dropoffLongitude, distance, duration, weatherCondition
-Target (y): surgeMultiplier
-Data Preprocessing:
-
-One-Hot Encoding for categorical features.
-Train-Test Split (70% training, 30% testing).
-Model Training:
-
+- Key Components of the Model
+1. Features and Target:
+2. Features (X): date, time, pickupLatitude, pickupLongitude, dropoffLatitude, dropoffLongitude, distance, duration, weatherCondition
+3. Target (y): surgeMultiplier
+4. Data Preprocessing:
+- One-Hot Encoding for categorical features.
+- Train-Test Split (70% training, 30% testing).
+  
+- Model Training:
 Random Forest with 100 decision trees.
-Model Evaluation:
 
+- Model Evaluation:
 Metrics:
 Mean Absolute Error (MAE): 0.1328
 Mean Squared Error (MSE): 0.0255
 Root Mean Squared Error (RMSE): 0.1598
 R² Score: 0.69
+
 These results indicate reasonable accuracy, explaining 69% of variance in surge pricing.
 
 ---
