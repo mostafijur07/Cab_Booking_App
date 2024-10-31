@@ -6,14 +6,13 @@ This project is a cab booking application developed using **React Native** and *
 The app simplifies cab booking with a user-friendly interface, allowing users to book a cab in five easy steps. This project offers a comprehensive convenient and efficient cab booking solution with robust features and reliable functionalities.
 
 ---
-
 ## 📑 Table of Contents
 - [Features](#-features)
 - [Technologies Used](#-technologies-used)
 - [Folder Structure](#-folder-structure)
-- [Getting Started](#-getting-started)
 - [Screenshots](#-screenshots)
 - [Surge Price Prediction Model](#-surge-price-prediction-model)
+- [Getting Started](#-getting-started)
 - [License](#-license)
 
 ---
@@ -26,8 +25,7 @@ The app simplifies cab booking with a user-friendly interface, allowing users to
 - **Data Storage:** User and booking information stored securely in Firebase.
 
 ---
-## 🗂️ Folder Structure
-
+## 🗂️ Folder Structure 
 ### Screens Folder
 1. `LoginScreen.js` - Login screen with Firebase Auth.
 2. `RegScreen.js` - Registration screen to store user info in Firebase.
@@ -68,31 +66,52 @@ Below are screenshots of the app's main screens:
 | ![Summary Screen](https://github.com/mostafijur07/Cab_Booking_App/blob/master/Screenshots/Summary.jpg) | ![Booking Details Screen](https://github.com/mostafijur07/Cab_Booking_App/blob/master/Screenshots/BookDetails.jpg) |
 
 ---
-🔍## Surge Price Prediction Model
+## 🔍 Surge Price Prediction Model
 - This project includes a surge price prediction system built using a Random Forest Regressor in Python. The system predicts the surge multiplier for cab fares in Kolkata based on various factors such as date, time, location, distance, duration, and weather.
 
-- Model Overview
+### Model Overview
 The model leverages a Random Forest Regressor algorithm, known for handling nonlinear data. The model was trained on a dataset of over 1,000 rows of historical data. By analyzing the dataset’s features, the model predicts the surge multiplier, allowing users to understand how external factors affect pricing.
 
-- Key Components of the Model
-1. Features and Target:
-2. Features (X): date, time, pickupLatitude, pickupLongitude, dropoffLatitude, dropoffLongitude, distance, duration, weatherCondition
-3. Target (y): surgeMultiplier
-4. Data Preprocessing:
-- One-Hot Encoding for categorical features.
-- Train-Test Split (70% training, 30% testing).
-  
-- Model Training:
+### Key Components of the Model
+1. **Features and Target:**
+  - Features (X): date, time, pickupLatitude, pickupLongitude, dropoffLatitude, dropoffLongitude, distance, duration, weatherCondition
+  - Target (y): surgeMultiplier
+2. **Data Preprocessing:**
+  - One-Hot Encoding for categorical features.
+  - Train-Test Split (70% training, 30% testing).
+
+### Dataset
+The dataset contains detailed cab booking data for the city of Kolkata. It includes 1,000 rows, each representing an individual booking instance, and provides the following attributes:
+1.**Date and Time:** Specifies when the booking was made.
+2.**Pickup and Drop-off Locations:** Latitude and longitude coordinates for both the pickup and drop-off points.
+3.**Distance and Duration:** Indicates the travel distance and estimated time for each trip.
+4.**Weather Condition:** Captures the prevailing weather conditions at the time of booking.
+5.**Surge Multiplier:** The target variable indicating the surge multiplier, which adjusts based on various factors such as time, location, and weather.
+This dataset is utilized to train the machine learning model, enabling it to predict surge pricing accurately by analyzing patterns and correlations among these attributes.
+
+### Model Training:
 Random Forest with 100 decision trees.
 
-- Model Evaluation:
-Metrics:
-Mean Absolute Error (MAE): 0.1328
-Mean Squared Error (MSE): 0.0255
-Root Mean Squared Error (RMSE): 0.1598
-R² Score: 0.69
+### Model Evaluation:
+**Metrics:**
+- Mean Absolute Error (MAE): 0.1328
+- Mean Squared Error (MSE): 0.0255
+- Root Mean Squared Error (RMSE): 0.1598
+- R² Score: 0.69
 
-These results indicate reasonable accuracy, explaining 69% of variance in surge pricing.
+These results indicate reasonable accuracy, explaining 69% of the variance in surge pricing.
+
+### 📊 Data Visualization
+
+Below are the visualizations generated from the dataset analysis:
+
+| Surge Multiplier Distribution                 | Actual vs. Predicted Comparison               |
+|-----------------------------------------------|-----------------------------------------------|
+| ![Surge Multiplier Distribution](https://github.com/mostafijur07/Cab_Booking_App/blob/master/Screenshots/SurgeMultiplierDistribution.png) | ![Actual vs. Predicted Comparison](https://github.com/mostafijur07/Cab_Booking_App/blob/master/Screenshots/ActualVsPredicted.png) |
+
+| Scatter Plot of Actual vs. Predicted          |
+|-----------------------------------------------|
+| ![Scatter Plot of Actual vs. Predicted](https://github.com/mostafijur07/Cab_Booking_App/blob/master/Screenshots/RandomForestRegressor.png) |
 
 ---
 ## 🚀 Getting Started
@@ -123,6 +142,7 @@ To set up a cloned React Native and Expo project, we need to install the necessa
    
 ---
 
-
+## 📄 License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 
