@@ -1,9 +1,10 @@
 # 🚖 Cab Booking App
 
 ## 📜 Project Description
-This project is a cab booking application developed using **React Native** and **Expo**. It incorporates a machine learning-based surge price prediction system to accurately forecast prices within the application. The system utilizes the **OpenWeatherMap API** for real-time weather data, enhancing the user experience. Additionally, the app integrates the **OpenRouteService API** and **React Native Maps** for efficient route planning and navigation. Secure user authentication and database functionality are provided by **Firebase**.
-
-The app simplifies cab booking with a user-friendly interface, allowing users to book a cab in five easy steps. This project offers a comprehensive convenient and efficient cab booking solution with robust features and reliable functionalities.
+- Designed and developed a mobile application for cab booking using React Native and Expo.
+- Integrated React Native Maps to enable precise selection of pick-up and drop-off points.
+- Implemented OpenWeatherMap API to retrieve real-time weather conditions and Utilized OpenRouteService API for efficient route optimization.
+- Developed a machine learning-based surge pricing system using a Random Forest Regressor with 100 decision trees in Python. The system predicts the surge multiplier for cab fares based on various factors, including date, time, location, distance, duration, and weather conditions.
 
 ---
 ## 📑 Table of Contents
